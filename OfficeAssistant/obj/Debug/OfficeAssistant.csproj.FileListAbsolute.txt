@@ -1,0 +1,10 @@
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\bin\Debug\OfficeAssistant.exe
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\bin\Debug\OfficeAssistant.pdb
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.FrmMain.resources
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.Properties.Resources.resources
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.csproj.GenerateResource.Cache
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.exe.licenses
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.exe
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.pdb
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.UserPanel.resources
+D:\02_MyProject\01_Windows_Projece\OfficeAssistant\OfficeAssistant\obj\Debug\OfficeAssistant.csprojResolveAssemblyReference.cache
