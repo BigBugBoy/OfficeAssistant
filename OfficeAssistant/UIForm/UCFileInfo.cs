@@ -7,15 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OfficeAssistant
+namespace OfficeAssistant.UIForm
 {
-    public partial class UserPanel : UserControl
+    public partial class UCFileInfo : UserControl
     {
-        public UserPanel()
+        public UCFileInfo()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// 提取数据库用户视图，绑定到grid
+        /// </summary>
+        private void bandGridData()
+        {
             SqlHelper sh = new SqlHelper();
-            string sql = @"select * from Users";
+            string sql = @"select * from fileInfo";
             gridControl1.DataSource = sh.executeSqlDataTable(sql);
         }
     }

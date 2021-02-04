@@ -56,7 +56,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\StaticHelper.cs" />
     <Compile Include="Helper\UIHelper.cs" />
+    <Compile Include="UIForm\UCFileInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIForm\UCFileInfo.Designer.cs">
+      <DependentUpon>UCFileInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +74,33 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helper\SqlHelper.cs" />
-    <Compile Include="UIForm\UserPanel.cs">
+    <Compile Include="UIForm\FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\FrmUserLogin.Designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\UCFileUpload .cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIForm\UserPanel.Designer.cs">
-      <DependentUpon>UserPanel.cs</DependentUpon>
+    <Compile Include="UIForm\UCFileUpload .Designer.cs">
+      <DependentUpon>UCFileUpload .cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\UCUserInfoChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIForm\UCUserInfoChange.Designer.cs">
+      <DependentUpon>UCUserInfoChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\UCUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIForm\UCUserInfo.Designer.cs">
+      <DependentUpon>UCUserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UIForm\UCFileInfo.resx">
+      <DependentUpon>UCFileInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForm\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,8 +114,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UIForm\UserPanel.resx">
-      <DependentUpon>UserPanel.cs</DependentUpon>
+    <EmbeddedResource Include="UIForm\FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\UCFileUpload .resx">
+      <DependentUpon>UCFileUpload .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\UCUserInfoChange.resx">
+      <DependentUpon>UCUserInfoChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\UCUserInfo.resx">
+      <DependentUpon>UCUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

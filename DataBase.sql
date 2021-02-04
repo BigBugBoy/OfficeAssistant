@@ -32,9 +32,6 @@ log on
 go
 
 
-
-
-
 --*****************************创建表*************************
 
 --用户表
@@ -67,7 +64,7 @@ use DB_wwj
 create table Levels
 (
 levelID int not null, --级别ID，主键，唯一标识
-leverName nvarchar(20), --级别名称，即JX
+levelName nvarchar(20), --级别名称，即JX
 primary key (levelID)
 )
 go
@@ -133,12 +130,43 @@ create table FileInfo
     fileNote nvarchar(500),  --文件备注
     fileDatas image not null,   --文件流数据
     status int not null, --文件删除标识
-    --workClassID int not null,   --文件类别标识
-    primary key(fileID)
+    primary key(fileID) --id设置为主键
 )
 go
 
 --给文件信息表添加一个文件编号列
 use DB_wwj
 alter table FileInfo add fileNumbers nvarchar(20) not null
+go
+
+--给文件添加工作类型
+use DB_wwj
+alter table FileInfo add workClassID int not null   --文件类别标识
+go
+use DB_wwj
+create table WorkClass
+(
+  workClassID int not null, --工作类别ID
+  workClassName nvarchar(20), --工作类别名称  
+  primary key(workClassID)  --id设置为主键
+)
+go
+
+--给用户添加删除标识
+use DB_wwj
+alter table Users add status int not null --删除标识
+go 
+
+
+--创建用户视图
+use DB_wwj
+create view userView as
+select userID,userIP,userName,DWs.dwName,Levels.levelName,Roles.roleName,userPassWord
+from Users,DWs,Levels,Roles
+where Users.userLevel = Levels.levelID and Users.userDW =DWs.dwID and Users.UserRole =Roles.roleID 
+go
+
+--查询视图
+use DB_wwj
+select * from userView
 go
